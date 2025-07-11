@@ -1,0 +1,442 @@
+# RAG Internal AI Copilot - .gitignore
+
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ========================================
+# AI/ML Specific
+# ========================================
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.mlmodel
+
+# Vector databases
+*.faiss
+*.index
+*.annoy
+*.nmslib
+
+# Embedding files
+*.npy
+*.npz
+embeddings/
+vectors/
+
+# Training data
+data/raw/
+data/processed/
+data/external/
+training_data/
+datasets/
+
+# Model checkpoints
+checkpoints/
+models/
+saved_models/
+
+# Logs and metrics
+logs/
+runs/
+tensorboard_logs/
+wandb/
+mlruns/
+
+# ========================================
+# RAG Project Specific
+# ========================================
+# US-002 outputs
+output/
+processed_documents/
+chunks/
+AI-Starter-Kit_final_output/
+
+# US-003 outputs
+db/
+vector_db/
+*.faiss
+*_backup.pkl
+*_backup.npy
+embedding_summary.json
+
+# Step 4 outputs
+rag_response_*.json
+step4_test_results_*.json
+context_*.json
+test_output_*.json
+
+# Step 5 outputs
+rag_pipeline_result_*.json
+pipeline_config_*.json
+
+# Temporary files
+/tmp/
+temp/
+*.tmp
+*.temp
+
+# Document processing
+embedding_ready.json
+processed_*.json
+
+# ========================================
+# System Files
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========================================
+# IDEs and Editors
+# ========================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+# PyCharm
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+.cask/
+dist/
+flycheck_*.el
+/server/
+.projectile
+.dir-locals.el
+/network-security.data
+
+# ========================================
+# Logs and Debugging
+# ========================================
+*.log
+*.out
+*.err
+debug.log
+error.log
+access.log
+application.log
+
+# Installation logs
+installation_progress.log
+
+# ========================================
+# Configuration and Secrets
+# ========================================
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+secrets.json
+config.json
+credentials.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# Backup and Archive
+# ========================================
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.swp
+*.tmp
+*~
+.#*
+\#*#
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ========================================
+# Documentation Build
+# ========================================
+docs/_build/
+docs/build/
+site/
+
+# ========================================
+# Testing
+# ========================================
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+test-reports/
+test_output/
+
+# ========================================
+# Deployment
+# ========================================
+# Docker
+Dockerfile.prod
+docker-compose.override.yml
+.dockerignore
+
+# Kubernetes
+*.yaml.bak
+*.yml.bak
+
+# ========================================
+# Project Specific Exclusions
+# ========================================
+# Keep important documentation
+!docs/
+!*.md
+!README.md
+!CHANGELOG.md
+!LICENSE
+
+# Keep configuration templates
+!config.template.json
+!.env.example
+
+# Keep empty directories with .gitkeep
+!.gitkeep
+
+# Keep important scripts
+!scripts/
+!*.sh
+!*.py
+
+# ========================================
+# Custom Additions
+# ========================================
+# Add any project-specific files to ignore below
+# Example:
+# custom_data/
+# private_notes.txt 

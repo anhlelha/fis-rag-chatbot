@@ -1,0 +1,33 @@
+# Checklist & Documentation Consistency Rule
+
+## Checklist Format
+- Mỗi bước trong checklist phải có:
+  - **Commands:** Câu lệnh/script thực hiện.
+  - **Validation:** Cách kiểm tra kết quả (cụ thể, có lệnh mẫu nếu cần).
+  - **Expected Output:** Kết quả kỳ vọng rõ ràng, ai cũng xác nhận được.
+  - **Status, Completed, Notes:** Đầy đủ, nhất quán với các checklist khác.
+
+## Progress Report Requirement
+- Mỗi khi tạo checklist cho user story/epic mới, **phải tạo kèm progress report** tương ứng (format giống us-001, us-002), để theo dõi tiến độ từng bước.
+- **Summary Statistics** phải đặt ngay sau phần tổng quan (tiêu đề, Epic, User Story, Target Server), trước phần chi tiết các bước.
+- Trường **Generated** phải là ngày giờ thực tế, không dùng shell placeholder (ví dụ: `2025-07-10 10:30:00`).
+
+## Checklist & Progress Report Synchronization
+- Mỗi khi cập nhật trạng thái bất kỳ bước nào trong checklist (đánh dấu hoàn thành, failed, in progress...), **phải đồng bộ cập nhật trạng thái, timestamp, notes cho bước tương ứng trong progress report**.
+- Không được để checklist và progress report lệch trạng thái.
+
+## Time Consistency
+- Khi cập nhật trường thời gian (**Completed**, **Timestamp**, **Generated**) trong checklist/report, **phải lấy đúng thời gian thực tế tại thời điểm thao tác**, không được dùng giá trị mẫu hoặc placeholder.
+
+## MDX Compatibility
+- Luôn escape các ký tự đặc biệt MDX trong file .md: { } [[ ]] <tag/>...
+
+## Style Consistency
+- Format checklist, report, tài liệu phải nhất quán giữa các user story/epic.
+- Ưu tiên format giống US-001 cho mọi checklist mới.
+
+## Automation
+- Nếu có progress report, phải đồng bộ trạng thái checklist và report theo thời gian thực.
+- **Bất kỳ thay đổi trạng thái nào ở checklist cũng phải được phản ánh ngay vào progress report tương ứng (bao gồm: trạng thái, thời gian hoàn thành, ghi chú).**
+
+**Bắt buộc tuân thủ cho mọi file checklist, report, tài liệu markdown trong dự án này.**
