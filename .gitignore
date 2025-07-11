@@ -355,6 +355,9 @@ credentials.json
 *.pem
 *.p12
 *.pfx
+private_key
+id_rsa
+id_rsa.pub
 
 # Database
 *.db
